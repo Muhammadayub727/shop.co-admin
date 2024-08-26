@@ -110,16 +110,6 @@ function Index(props: any) {
           </Form.Item>
 
           <Form.Item
-            name={"oldPrice"}
-            rules={[
-              { required: true, message: "Please input product old price!" },
-            ]}
-            hasFeedback
-          >
-            <Input className="custom-input" type="number" placeholder="Old Price" />
-          </Form.Item>
-
-          <Form.Item
             name={"categoryId"}
             rules={[
               { required: true, message: "Please select product category!" },
@@ -133,16 +123,6 @@ function Index(props: any) {
                 </Select.Option>
               ))}
             </Select>
-          </Form.Item>
-
-          <Form.Item
-            name={"units"}
-            rules={[
-              { required: true, message: "Please input product units!" },
-            ]}
-            hasFeedback
-          >
-            <Input className="custom-input" placeholder="Units (e.g., kg)" />
           </Form.Item>
 
           <Form.Item
@@ -170,7 +150,7 @@ function Index(props: any) {
             </Dragger>
           </Form.Item>
 
-          <Form.Item>
+          <Form.Item className="submit-button-container">
             <Button htmlType="submit" type="default" className="submit-button">
               Submit
             </Button>
